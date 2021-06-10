@@ -112,3 +112,88 @@ jQuery('.line-block-buttons .tab-b-1').on('click', function(){
     jQuery('.line-tabs .line-tab-1').toggle();
     jQuery('.line-tabs .line-tab-2').toggle();
 });
+
+//mask for time
+$(document).ready(function() {
+    var input = document.querySelectorAll('#timepicker',)[0];
+    var dateInputMask = function dateInputMask(elm) {
+        elm.addEventListener('keyup', function(e) {
+        if( e.keyCode < 47 || e.keyCode > 57) {
+            e.preventDefault();
+        }
+        
+        var len = elm.value.length;
+        
+        if(len !== 1 || len !== 3) {
+            if(e.keyCode == 47) {
+            e.preventDefault();
+            }
+        }
+        if(len === 2) {
+        if (e.keyCode !== 8 && e.keyCode !== 46) { 
+            elm.value = elm.value+':';
+        }}
+        });
+    };   
+    dateInputMask(input);
+});
+
+//mask for date
+$(document).ready(function() {
+    var input = document.querySelectorAll('#datepicker')[0];
+    var dateInputMask = function dateInputMask(elm) {
+        elm.addEventListener('keyup', function(e) {
+        if( e.keyCode < 47 || e.keyCode > 57) {
+            e.preventDefault();
+            }
+        
+        var len = elm.value.length;
+        
+            if(len !== 1 || len !== 3) {
+            if(e.keyCode == 47) {
+                e.preventDefault();
+            }
+            }
+        if(len === 2) {
+            if (e.keyCode !== 8 && e.keyCode !== 46) { 
+            elm.value = elm.value+'.';
+            }}
+        
+        if(len === 5) {
+            if (e.keyCode !== 8 && e.keyCode !== 46) { 
+            elm.value = elm.value+'.';
+            }}
+        });
+        };
+        
+    dateInputMask(input);
+    });
+
+//calendar
+$( function() {
+    $( "#datepicker" ).datepicker({
+        showOn: "button",
+		buttonImage: "./resrc/calendar-picker.svg",
+		buttonImageOnly: true,
+        showButtonPanel: true,
+        minDate: 0,
+        closeText: "",
+        prevText: "&#x3C;Пред",
+        nextText: "След&#x3E;",
+        currentText: "",
+        monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+        monthNamesShort: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+        "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+        dayNames: [ "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота" ],
+        dayNamesShort: [ "вск", "пнд", "втр", "срд", "чтв", "птн", "сбт" ],
+        dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+        weekHeader: "Нед",
+        dateFormat: "dd.mm.y",
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: "",
+        showOtherMonths: true
+    });
+} );

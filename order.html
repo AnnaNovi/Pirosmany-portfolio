@@ -231,7 +231,7 @@ button:hover, a:hover {
   border-radius: 18px; }
   .modal .modal-dialog .modal-content {
     border: none;
-    padding: 29px 43px 34px 46px;
+    padding: 0 46px;
     position: relative;
     border-radius: 18px; }
     .modal .modal-dialog .modal-content .btn-close {
@@ -284,14 +284,6 @@ button:hover, a:hover {
             font-size: 12.2245px;
             line-height: 18px;
             color: #C6C6C6; }
-        .modal .modal-dialog .modal-content .modal-body form .inpb svg {
-          height: 11px;
-          width: 11px;
-          position: absolute;
-          top: 20px;
-          left: 19px; }
-          .modal .modal-dialog .modal-content .modal-body form .inpb svg use {
-            fill: #DADADA; }
       .modal .modal-dialog .modal-content .modal-body form .forgot_pass {
         font-weight: normal;
         font-size: 14px;
@@ -308,8 +300,7 @@ button:hover, a:hover {
         line-height: 18px;
         text-align: center;
         color: #FFFFFF;
-        border: none;
-        margin-bottom: 24px; }
+        border: none; }
       .modal .modal-dialog .modal-content .modal-body .modal-txt {
         font-weight: normal;
         font-size: 12px;
@@ -323,11 +314,17 @@ button:hover, a:hover {
 .modal#modal-login .modal-dialog {
   width: 358px; }
   .modal#modal-login .modal-dialog .modal-content {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 18px;
+    padding-top: 30px;
+    padding-bottom: 35px; }
+    .modal#modal-login .modal-dialog .modal-content .modal-body {
+      padding: 0px; }
 
 .modal#modal-login form button {
   width: 143px;
-  margin-top: 12px; }
+  margin-top: 12px;
+  margin-bottom: 18px; }
 
 .modal#modal-login form .inpb input.pass {
   margin-bottom: 15px; }
@@ -335,27 +332,157 @@ button:hover, a:hover {
 .modal#modal-login form .inpb input.phone {
   margin-bottom: 25px; }
 
+.modal#modal-login form .inpb svg {
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 20px;
+  left: 19px; }
+  .modal#modal-login form .inpb svg use {
+    fill: #DADADA; }
+
 .modal#modal-regist .modal-dialog {
   width: 384px; }
   .modal#modal-regist .modal-dialog .modal-content {
-    width: 100%; }
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 14px; }
+    .modal#modal-regist .modal-dialog .modal-content .modal-body {
+      padding: 0px; }
 
 .modal#modal-regist form button {
   width: 176px;
-  margin-top: 38px; }
+  margin-top: 38px;
+  margin-bottom: 8px; }
+
+.modal#modal-regist form .inpb {
+  margin-bottom: 27px; }
+  .modal#modal-regist form .inpb svg {
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 20px;
+    left: 19px; }
+    .modal#modal-regist form .inpb svg use {
+      fill: #DADADA; }
+  .modal#modal-regist form .inpb:last-child {
+    margin-bottom: 12px; }
+
+.modal#modal-regist form .radio-block {
+  text-align: start; }
+  .modal#modal-regist form .radio-block .line input {
+    margin-right: 16px; }
+  .modal#modal-regist form .radio-block .line label {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #C6C6C6;
+    text-align: start; }
+    .modal#modal-regist form .radio-block .line label a {
+      color: #00AC4E; }
 
 .modal#modal-booking .modal-dialog .modal-content {
-  width: 654px; }
+  width: 654px;
+  padding-bottom: 10px; }
 
 .modal#modal-booking form .inpb input {
   padding: 15px 17px;
   margin-bottom: 13px; }
 
-.modal#modal-booking form .inpb.line input {
-  width: 47%; }
+.modal#modal-booking form .inpb.line {
+  position: relative; }
+  .modal#modal-booking form .inpb.line input {
+    width: 47%; }
+
+.modal#modal-booking form button {
+  width: 164px;
+  margin-top: 10px; }
 
 .modal#modal-booking .modal-body .top-modal .modal-name {
   font-size: 24px; }
+
+.modal#modal-booking .ui-datepicker-trigger {
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  right: 20px; }
+
+.ui-datepicker {
+  font-family: 'TT Hoves';
+  width: 314px !important;
+  height: 275px;
+  background: #FFFFFF;
+  border-radius: 16px !important;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 45px 45px 26px 45px !important;
+  border: none !important; }
+  .ui-datepicker .ui-datepicker-header {
+    border: none;
+    background: none;
+    color: #00AC4E;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 30px; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon {
+      background-image: url(./resrc/calendar-prev.svg);
+      background-position: 0; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:focus {
+      border: none; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon {
+      background-image: url(./resrc/calendar-next.svg);
+      background-position: 0; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover, .ui-datepicker .ui-datepicker-header .ui-datepicker-next:focus {
+      border: none; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-year {
+      display: none; }
+  .ui-datepicker .ui-datepicker-calendar thead {
+    font-family: 'TT Hoves';
+    font-weight: 500;
+    color: #00AC4E;
+    font-size: 14px;
+    line-height: 17px; }
+  .ui-datepicker .ui-datepicker-calendar tbody {
+    font-family: "TT Hoves" !important;
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px; }
+    .ui-datepicker .ui-datepicker-calendar tbody td span, .ui-datepicker .ui-datepicker-calendar tbody td a {
+      border: none;
+      background: none; }
+    .ui-datepicker .ui-datepicker-calendar tbody td a:hover {
+      color: #00AC4E; }
+    .ui-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-today a {
+      padding: 3px;
+      background: #00AC4E;
+      border-radius: 3px;
+      color: white; }
+    .ui-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-current-day a {
+      color: #00AC4E; }
+    .ui-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-disable span {
+      color: #E0E0E0;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px; }
+  .ui-datepicker td span, .ui-datepicker td a {
+    text-align: center !important; }
+  .ui-datepicker .ui-datepicker-buttonpane {
+    visibility: hidden; }
+    .ui-datepicker .ui-datepicker-buttonpane .ui-datepicker-close {
+      visibility: visible;
+      position: absolute;
+      top: 18px;
+      right: 21px;
+      background-image: url(./resrc/calendar-cls.svg);
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+      border: none;
+      background-color: white; }
 
 header {
   background: #ffffff;
@@ -2102,7 +2229,7 @@ footer {
 <div class="modal-dialog">
 <div class="modal-content">
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="modal-remove icon"><use xlink:href="./resrc/sprite.svg#cart-remove"></use></svg></button>
-<div class="modal-body"><div class="top-modal"><div class="modal-img"><svg class="profile__icon icon"><use xlink:href="./resrc/sprite.svg#person"></use></svg></div><div class="modal-name">Регистрация</div></div><form action="" method="post"><div class="inpb"><svg class="modal-login-phone icon"><use xlink:href="./resrc/sprite.svg#phone"></use></svg><input class="phone" type="text" name="" placeholder="Телефон"></div><div class="inpb"><svg class="modal-login-key icon"><use xlink:href="./resrc/sprite.svg#key"></use></svg><input class="pass" type="text" name="" placeholder="Пароль"></div><div class="inpb"><svg class="modal-login-key icon"><use xlink:href="./resrc/sprite.svg#key"></use></svg><input class="confirm-pass" type="text" name="" placeholder="Подтвердите пароль"></div><button>Зарегистрироваться</button></form></div>
+<div class="modal-body"><div class="top-modal"><div class="modal-img"><svg class="profile__icon icon"><use xlink:href="./resrc/sprite.svg#person"></use></svg></div><div class="modal-name">Регистрация</div></div><form action="" method="post"><div class="inpb"><svg class="modal-login-phone icon"><use xlink:href="./resrc/sprite.svg#phone"></use></svg><input class="phone" type="text" name="" placeholder="Телефон"></div><div class="inpb"><svg class="modal-login-key icon"><use xlink:href="./resrc/sprite.svg#key"></use></svg><input class="pass" type="text" name="" placeholder="Пароль"></div><div class="inpb"><svg class="modal-login-key icon"><use xlink:href="./resrc/sprite.svg#key"></use></svg><input class="confirm-pass" type="text" name="" placeholder="Подтвердите пароль"></div><div class="radio-block"> <div class="line"> <input id="r-mail" type="checkbox" name=""><label for="r-mail">Хочу получать выгодные предложения от магазина</label></div><div class="line"> <input id="r-pol" type="checkbox" checked name=""><label for="r-pol">Принимаю условия &nbsp<a href="">Пользовательского соглашения,</a><br><a href="">Политики конфиденциальности</a></label></div></div><button>Зарегистрироваться</button></form></div>
 </div>
 </div>
 </div>
@@ -2110,7 +2237,7 @@ footer {
 <div class="modal-dialog">
 <div class="modal-content">
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="modal-remove icon"><use xlink:href="./resrc/sprite.svg#cart-remove"></use></svg></button>
-<div class="modal-body"><div class="top-modal"><div class="modal-name">Бронирование стола</div></div><form action="" method="post"><div class="inpb"><input class="name" type="text" name="" placeholder="Имя"></div><div class="inpb d-flex justify-content-between line"><input class="phone" type="text" name="" placeholder="+380"><input class="number" type="text" name="" placeholder="Количество человек"></div><div class="inpb d-flex justify-content-between line"><input class="pass" type="text" name="" placeholder="Время: _ _ : _ _"><input class="confirm-pass" type="date" name="" placeholder="Дата:  дд.мм.гг"></div><button>Забронировать</button></form></div>
+<div class="modal-body"><div class="top-modal"><div class="modal-name">Бронирование стола</div></div><form action="" method="post"><div class="inpb"><input class="name" type="text" name="" placeholder="Имя"></div><div class="inpb d-flex justify-content-between line"><input class="phone" type="text" name="" placeholder="+380"><input class="number" type="text" name="" placeholder="Количество человек"></div><div class="inpb d-flex justify-content-between line"><input class="time" type="text" id="timepicker" maxlength="5" name="" placeholder="Время: _ _ : _ _"><input class="date" type="date" id="datepicker" maxlength="8" name="" placeholder="Дата:  дд.мм.гг"></div><button>Забронировать</button></form></div>
 </div>
 </div>
 </div><header><nav class="navbar navbar-expand-lg navbar-light"><div class="container"><a class="navbar-brand" href="./index.html">
@@ -2151,4 +2278,6 @@ footer {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="./resrc/features.js"> </script></body></html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="./resrc/features.js"> </script><link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script></body></html>
