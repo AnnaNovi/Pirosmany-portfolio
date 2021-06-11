@@ -278,12 +278,68 @@ button:hover, a:hover {
           border: 0.873181px solid #EBEBEB;
           box-sizing: border-box;
           border-radius: 6px;
-          padding: 15px 50px; }
+          padding: 15px 40px; }
           .modal .modal-dialog .modal-content .modal-body form .inpb input::placeholder {
             font-weight: normal;
-            font-size: 12.2245px;
+            font-size: 11px;
             line-height: 18px;
             color: #C6C6C6; }
+        .modal .modal-dialog .modal-content .modal-body form .inpb.digit {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .modal .modal-dialog .modal-content .modal-body form .inpb.digit input {
+            width: 33px;
+            height: 47px;
+            background: #FCFCFC;
+            border: 1px solid #EBEBEB;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 16px;
+            text-align: center;
+            color: #000000;
+            padding: 0px; }
+          .modal .modal-dialog .modal-content .modal-body form .inpb.digit span {
+            width: 7px;
+            height: 1px;
+            background: #343E48;
+            margin: 0 6px; }
+        .modal .modal-dialog .modal-content .modal-body form .inpb.line-rev span {
+          font-size: 10px; }
+      .modal .modal-dialog .modal-content .modal-body form .send-check {
+        text-align: center; }
+        .modal .modal-dialog .modal-content .modal-body form .send-check.active button {
+          background: #00AC4E; }
+        .modal .modal-dialog .modal-content .modal-body form .send-check.active span {
+          color: #00AC4E; }
+        .modal .modal-dialog .modal-content .modal-body form .send-check.active .b {
+          display: none; }
+        .modal .modal-dialog .modal-content .modal-body form .send-check .line {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-bottom: 30px; }
+        .modal .modal-dialog .modal-content .modal-body form .send-check span {
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #BDBDBD;
+          text-decoration: underline; }
+          .modal .modal-dialog .modal-content .modal-body form .send-check span.b {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: #000000;
+            margin-left: 10px;
+            text-decoration: none !important; }
+        .modal .modal-dialog .modal-content .modal-body form .send-check button {
+          background: #E0E0E0;
+          cursor: inherit; }
+          .modal .modal-dialog .modal-content .modal-body form .send-check button:hover {
+            filter: brightness(100%); }
       .modal .modal-dialog .modal-content .modal-body form .forgot_pass {
         font-weight: normal;
         font-size: 14px;
@@ -296,11 +352,39 @@ button:hover, a:hover {
         background: #00AC4E;
         border-radius: 6px;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 15px;
         text-align: center;
         color: #FFFFFF;
         border: none; }
+      .modal .modal-dialog .modal-content .modal-body form .error-txt {
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        color: #EB5757;
+        margin-top: -10px;
+        margin-bottom: 10px; }
+      .modal .modal-dialog .modal-content .modal-body form .btn-line {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px; }
+        .modal .modal-dialog .modal-content .modal-body form .btn-line button {
+          width: 121px; }
+        .modal .modal-dialog .modal-content .modal-body form .btn-line .clr {
+          background: none;
+          color: #00AC4E;
+          width: 60px; }
+      .modal .modal-dialog .modal-content .modal-body form .line-rev .rating .star {
+        height: 11px;
+        width: 11px;
+        margin-right: 3px; }
+        .modal .modal-dialog .modal-content .modal-body form .line-rev .rating .star:last-child {
+          margin-right: 0px; }
+      .modal .modal-dialog .modal-content .modal-body form .line-rev .rating .green-star use {
+        fill: #00AC4E; }
+      .modal .modal-dialog .modal-content .modal-body form .line-rev .rating .grey-star use {
+        fill: #EBEBEB; }
       .modal .modal-dialog .modal-content .modal-body .modal-txt {
         font-weight: normal;
         font-size: 12px;
@@ -315,7 +399,6 @@ button:hover, a:hover {
   width: 358px; }
   .modal#modal-login .modal-dialog .modal-content {
     width: 100%;
-    padding-bottom: 18px;
     padding-top: 30px;
     padding-bottom: 35px; }
     .modal#modal-login .modal-dialog .modal-content .modal-body {
@@ -340,6 +423,9 @@ button:hover, a:hover {
   left: 19px; }
   .modal#modal-login form .inpb svg use {
     fill: #DADADA; }
+
+.modal#modal-login form .error-txt {
+  margin-top: 0px; }
 
 .modal#modal-regist .modal-dialog {
   width: 384px; }
@@ -368,19 +454,39 @@ button:hover, a:hover {
   .modal#modal-regist form .inpb:last-child {
     margin-bottom: 12px; }
 
-.modal#modal-regist form .radio-block {
-  text-align: start; }
+.modal#modal-regist form .radio-block .line {
+  display: flex;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: start;
+  color: #C6C6C6;
+  margin-bottom: 16px; }
+  .modal#modal-regist form .radio-block .line:last-child {
+    margin-bottom: 0px; }
   .modal#modal-regist form .radio-block .line input {
-    margin-right: 16px; }
-  .modal#modal-regist form .radio-block .line label {
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 14px;
-    text-align: center;
-    color: #C6C6C6;
-    text-align: start; }
-    .modal#modal-regist form .radio-block .line label a {
-      color: #00AC4E; }
+    position: relative;
+    display: none; }
+    .modal#modal-regist form .radio-block .line input:checked ~ label::before {
+      background: #00AC4E;
+      border: 2px solid #FCFCFC;
+      border-radius: 50%; }
+    .modal#modal-regist form .radio-block .line input ~ label {
+      margin-left: 32px;
+      position: relative; }
+      .modal#modal-regist form .radio-block .line input ~ label a {
+        color: #00AC4E; }
+      .modal#modal-regist form .radio-block .line input ~ label::before {
+        content: '';
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: #FCFCFC;
+        border: 2px solid #EBEBEB;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: -32px; }
 
 .modal#modal-booking .modal-dialog .modal-content {
   width: 654px;
@@ -407,6 +513,99 @@ button:hover, a:hover {
   cursor: pointer;
   top: 18px;
   right: 20px; }
+
+.modal#modal-mail .modal-dialog {
+  width: 303px; }
+  .modal#modal-mail .modal-dialog .modal-content {
+    width: 100%;
+    padding: 35px 30px; }
+    .modal#modal-mail .modal-dialog .modal-content .modal-body {
+      padding: 0px; }
+
+.modal#modal-mail .modal-body .top-modal .modal-img svg use {
+  fill: #00AC4E; }
+
+.modal#modal-mail .modal-body .top-modal .modal-name {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 22px; }
+
+.modal#modal-mail form button {
+  width: 121px;
+  margin-top: 12px; }
+
+.modal#modal-mail form .inpb svg {
+  height: 13px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 22px; }
+  .modal#modal-mail form .inpb svg use {
+    fill: #DADADA; }
+
+.modal#modal-check-phone .modal-dialog {
+  width: 303px; }
+  .modal#modal-check-phone .modal-dialog .modal-content {
+    width: 100%;
+    padding: 24px 55px 29px 55px; }
+    .modal#modal-check-phone .modal-dialog .modal-content .modal-body {
+      padding: 0px; }
+
+.modal#modal-check-phone .modal-body .top-modal .modal-name {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 25px; }
+
+.modal#modal-check-phone form button {
+  width: 115px; }
+
+.modal#modal-recovery-pass .modal-dialog {
+  width: 303px; }
+  .modal#modal-recovery-pass .modal-dialog .modal-content {
+    width: 100%;
+    padding: 24px 37px 21px 37px; }
+    .modal#modal-recovery-pass .modal-dialog .modal-content .modal-body {
+      padding: 0px; }
+
+.modal#modal-recovery-pass .modal-body .top-modal .modal-name {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 25px; }
+
+.modal#modal-recovery-pass form .inpb input {
+  margin-bottom: 21px; }
+  .modal#modal-recovery-pass form .inpb input:last-child {
+    margin-bottom: 30px; }
+  .modal#modal-recovery-pass form .inpb input.new-pass {
+    padding-right: 10px; }
+
+.modal#modal-recovery-pass form .inpb svg {
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 20px;
+  left: 15px; }
+  .modal#modal-recovery-pass form .inpb svg use {
+    fill: #DADADA; }
+
+.modal#modal-review .modal-dialog {
+  width: 318px; }
+  .modal#modal-review .modal-dialog .modal-content {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 14px; }
+    .modal#modal-review .modal-dialog .modal-content .modal-body {
+      padding: 0px; }
+
+.modal#modal-review .top-modal .modal-name {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  text-align: start; }
+
+.modal#modal-review form button {
+  width: 72px; }
 
 .ui-datepicker {
   font-family: 'TT Hoves';

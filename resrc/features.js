@@ -30,13 +30,13 @@ jQuery(function(){
 
     //On click add 1 to n
     j('.plus').on('click', function(){
-        j(addInput).val(++n + "шт.");
+        j(addInput).val(n++ + 'шт.');
     })
 
     j('.min').on('click', function(){
         //If n is bigger or equal to 1 subtract 1 from n
         if (n >= 1) {
-        j(addInput).val(--n + "шт.");
+            j(addInput).val(n-- + 'шт.');
         } else {
         //Otherwise do nothing
         }
