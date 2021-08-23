@@ -790,7 +790,7 @@ header {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
     border: none;
-    padding: 56px 0 0;
+    padding: 56px 0 6px 0;
     position: relative;
     top: -17px;
     margin: 0px;
@@ -806,6 +806,8 @@ header {
         line-height: 13px;
         color: #333333;
         margin-left: 8px; }
+        header .dropdown-menu .dropdown-item span:hover {
+          color: #00ac4e; }
     header .dropdown-menu .dropdown-item__icon {
       max-width: 18px;
       max-height: 18px;
@@ -2462,6 +2464,49 @@ footer {
     color: #FFFFFF;
     padding: 18px 32px;
     border: none; }
+
+a.pages {
+  color: white;
+  background: #00ac4e;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 30px auto -30px auto; }
+
+section.all-pages .container {
+  padding: 25px 0; }
+
+section.all-pages h3 {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 19px;
+  color: #00ac4e;
+  margin-bottom: 35px; }
+
+section.all-pages .block-pages {
+  padding-bottom: 20px; }
+
+section.all-pages a,
+section.all-pages button {
+  display: block;
+  border: none;
+  background: none;
+  padding: 3px 0;
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 19px;
+  color: black;
+  text-decoration: none; }
+  section.all-pages a:hover,
+  section.all-pages button:hover {
+    opacity: 0.8; }
 
 </style></head><body><div class="wrapper"><!--MIXIN--><!--POP-UPS--><div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">

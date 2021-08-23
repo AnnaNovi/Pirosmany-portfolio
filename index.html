@@ -790,7 +790,7 @@ header {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
     border: none;
-    padding: 56px 0 0;
+    padding: 56px 0 6px 0;
     position: relative;
     top: -17px;
     margin: 0px;
@@ -806,6 +806,8 @@ header {
         line-height: 13px;
         color: #333333;
         margin-left: 8px; }
+        header .dropdown-menu .dropdown-item span:hover {
+          color: #00ac4e; }
     header .dropdown-menu .dropdown-item__icon {
       max-width: 18px;
       max-height: 18px;
@@ -2463,6 +2465,49 @@ footer {
     padding: 18px 32px;
     border: none; }
 
+a.pages {
+  color: white;
+  background: #00ac4e;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 30px auto -30px auto; }
+
+section.all-pages .container {
+  padding: 25px 0; }
+
+section.all-pages h3 {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 19px;
+  color: #00ac4e;
+  margin-bottom: 35px; }
+
+section.all-pages .block-pages {
+  padding-bottom: 20px; }
+
+section.all-pages a,
+section.all-pages button {
+  display: block;
+  border: none;
+  background: none;
+  padding: 3px 0;
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 19px;
+  color: black;
+  text-decoration: none; }
+  section.all-pages a:hover,
+  section.all-pages button:hover {
+    opacity: 0.8; }
+
 </style></head><body><div class="wrapper"><!--MIXIN--><!--POP-UPS--><div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
@@ -2551,7 +2596,7 @@ footer {
 <li class="nav-item">
 <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-booking">Бронь стола</a>
 </li>
-</ul><div class="menu-right d-flex"> <div class="menu-contact"> <a class="phone" href="tel:+78312826000"><svg class="menu-contact__icon icon"><use xlink:href="./resrc/sprite.svg#phone"></use></svg><span>+7 (831) 282-60-00</span></a></div><div class="menu-user"> <button class="profile" data-bs-toggle="modal" data-bs-target="#modal-login"><svg class="profile__icon icon"><use xlink:href="./resrc/sprite.svg#person"></use></svg></button><a class="cart" href="./cart.html"><svg class="menu-user__icon icon"><use xlink:href="./resrc/sprite.svg#shopping-cart"></use></svg></a></div></div></div></div></nav></header><section class="home-banner"><div class="container"><div class="swiper-container swiper-container-home">
+</ul><div class="menu-right d-flex"> <div class="menu-contact"> <a class="phone" href="tel:+78312826000"><svg class="menu-contact__icon icon"><use xlink:href="./resrc/sprite.svg#phone"></use></svg><span>+7 (831) 282-60-00</span></a></div><div class="menu-user"> <button class="profile" data-bs-toggle="modal" data-bs-target="#modal-login"><svg class="profile__icon icon"><use xlink:href="./resrc/sprite.svg#person"></use></svg></button><a class="cart" href="./cart.html"><svg class="menu-user__icon icon"><use xlink:href="./resrc/sprite.svg#shopping-cart"></use></svg></a></div></div></div></div></nav></header><a class="pages" href="./all-pages.html">Посмотреть все страницы и модальные окна</a><section class="home-banner"><div class="container"><div class="swiper-container swiper-container-home">
 <div class="swiper-wrapper">
 <div class="swiper-slide block"><img src="./resrc/index-top-banner.png"><h2>Подарок на первый заказ.</h2><p>Получите 500 рублей за подписку на рассылку</p><a href="" data-bs-toggle="modal" data-bs-target="#modal-mail"> Подписаться</a></div>
 <div class="swiper-slide block"><img src="./resrc/index-top-banner.png"><h2>Подарок на первый заказ.</h2><p>Получите 500 рублей за подписку на рассылку</p><a href="" data-bs-toggle="modal" data-bs-target="#modal-mail"> Подписаться</a></div>
